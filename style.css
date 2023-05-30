@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+main{
+    border: 1px solid black;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin:15px auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 10px;
+    
+}
+.containerAdd{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    padding: 5px 0 10px 0;
+}
+.inputTask{
+    width: 100%;
+    height: 3em;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(20, 236, 189);
+    
+}
+.containerTaskAdd{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: hidden;
+    height: auto;
+    gap: 5px;
+    border: 2px solid rgb(20, 236, 189);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.NewTask{
+   display: flex;
+   width: 100%;
+   border: 1px solid grey;
+   
+    
+}
+.btnAddNewTask{
+    border: none;
+    background-color: rgb(194, 226, 162);
+    color: rgb(31, 28, 28);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: -1px 1px 5px green;
+    font-weight: 500;
+}
+.fa-solid{
+    color: rgb(236, 143, 143);
+    cursor: pointer;
+}
+/*Utilites*/
+.error{
+    border:2px solid rgb(231, 13, 13) !important;
+}
+.error::placeholder{
+    color: red;
+}

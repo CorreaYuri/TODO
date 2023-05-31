@@ -17,6 +17,8 @@ main{
 }
 h1{
     margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
     
 }
 .containerAdd{
@@ -34,13 +36,14 @@ h1{
     border: 2px solid rgb(20, 236, 189);
     
 }
+
 .containerTaskAdd{
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow-y: hidden;
     height: auto;
-    gap: 5px;
+    gap: 15px;
     border: 2px solid rgb(20, 236, 189);
     border-radius: 5px;
     padding: 10px;
@@ -49,9 +52,9 @@ h1{
 .NewTask{
    display: flex;
    width: 100%;
-   border: 1px solid grey;
-   
-    
+   border-bottom: 1px solid grey;
+   align-items: center;
+   justify-content:space-between;
 }
 .btnAddNewTask{
     border: none;
@@ -63,8 +66,10 @@ h1{
     font-weight: 500;
 }
 .fa-solid{
-    color: rgb(236, 143, 143);
+
+    color: rgb(235, 105, 105);
     cursor: pointer;
+    
 }
 /*Utilites*/
 .error{
@@ -72,4 +77,7 @@ h1{
 }
 .error::placeholder{
     color: red;
+}
+.completd{
+    text-decoration: line-through;
 }
